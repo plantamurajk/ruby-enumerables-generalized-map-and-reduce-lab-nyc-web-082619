@@ -1,6 +1,6 @@
 # Your Code Here
 
-def map(source_array)
+def map(source_array, block)
   negative_array = source_array.map {|num| num * -1}
   return negative_array
 end
