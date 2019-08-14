@@ -5,3 +5,4 @@ def map(source_array)
   return new_array
 end
 
+map(source_array){|n| n * -1}
