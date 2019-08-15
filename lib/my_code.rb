@@ -5,7 +5,7 @@ def map(source_array, &block)
   return new_array
 end
 
-def reduce(source_array, starting_point, &block)
+def reduce(source_array, starting_point*, &block)
   total = source_array.reduce(&block)
   if (starting_point) then
     return total + starting_point
