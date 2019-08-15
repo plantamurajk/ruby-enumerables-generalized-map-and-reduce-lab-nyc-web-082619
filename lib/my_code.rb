@@ -6,10 +6,6 @@ def map(source_array, &block)
 end
 
 def reduce(source_array, starting_point = 0, &block)
-  if (starting_point != 0) then
-    total = total + source_array.reduce(&block)
-    return total
-  end
   total = source_array.reduce(&block)
-  return total
+  return total += starting_point
 end
