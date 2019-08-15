@@ -7,7 +7,7 @@ end
 
 def reduce(source_array, starting_point = 0, &block)
   total = source_array.reduce(&block)
-  if (total.class === Integer)
+  if (total.class === Integer) then
     return total + starting_point
   end
   return total
