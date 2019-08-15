@@ -9,6 +9,7 @@ def reduce(source_array, starting_point = 0, &block)
   if (starting_point != 0) then
     total += source_array.reduce(&block)
     return total
+  end
   total = source_array.reduce(&block)
   return total
 end
