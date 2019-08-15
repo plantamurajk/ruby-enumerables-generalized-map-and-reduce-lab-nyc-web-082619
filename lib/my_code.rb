@@ -5,6 +5,3 @@ def map(source_array)
   yield(new_array)
 end
 
-map(new_array) do
-  |n| n * -1
-end
