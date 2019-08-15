@@ -5,3 +5,5 @@ def map(source_array, &block)
   return new_array
 end
 
+def reduce(source_array, starting_point = 0)
+  
